@@ -8,8 +8,8 @@
 
 
 10.times do
-  title = Faker::GameOfThrones.unique.character
-  content = Faker::Lorem.sentence
+  title = Faker::Beer.unique.name
+  content = Faker::Lorem.paragraph
 
   Article.create(title: title, content: content)
 end
